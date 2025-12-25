@@ -1,0 +1,51 @@
+{
+  "name": "permitted",
+  "version": "0.0.1",
+  "description": "Official Permitted SDK for TypeScript/JavaScript",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "permitted",
+    "licensing",
+    "license-key",
+    "software-licensing",
+    "sdk"
+  ],
+  "author": "Permitted <hello@permitted.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PermittedDotDev/javascript.git"
+  },
+  "homepage": "https://permitted.io",
+  "bugs": {
+    "url": "https://github.com/PermittedDotDev/javascript/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
